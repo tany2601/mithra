@@ -86,3 +86,7 @@ var sections = document.querySelectorAll(".sec-right")
         color:`#fff`
         
     })
+
+
+
+    

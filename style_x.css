@@ -11,6 +11,12 @@ button {
     width: fit-content;
 }
 
+button:hover{
+    background-color: #fbb32d;
+    color: #fff;
+    transition: 0.3s;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -45,6 +51,11 @@ nav h1 {
     text-transform: uppercase;
     color: white;
     font-weight: 600;
+}
+
+.nav-part2 a:hover{
+    color: #fbb32d;
+    transition: 0.2s;
 }
 
 
@@ -114,6 +125,7 @@ nav button {
     #moving-div{
         margin-top: 7rem;
         width: 70%;
+        z-index: 0;
     }
 
     #moving-div .move img {
@@ -144,6 +156,15 @@ nav button {
         display: block;
         margin-top: 6rem;
         margin-bottom: -6rem;
+    }
+
+    #page6 img{
+        display: none;
+    }
+
+    #formcard{
+        margin-left: -40%;
+
     }
 
 }
