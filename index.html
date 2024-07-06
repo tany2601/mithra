@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style_x.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -16,18 +17,20 @@
         <h3>It."</h3>
 
     </div>
-    <nav>
-        <h1>MITHRA.</h1>
-        <div class="nav-part2">
-            <a href="">HOME</a>
-            <a href="">ABOUT US</a>
-            <a href="">CONTACT US</a>
-            <a href="">NEED HELP?</a>
-        </div>
-        <button>MOCK TEST</button>
-    </nav>
+    <header>
+      <nav>
+          <h1>MITHRA.</h1>
+          <div class="nav-part2">
+              <a href="">HOME</a>
+              <a href="">ABOUT US</a>
+              <a href="">CONTACT US</a>
+              <a href="">NEED HELP?</a>
+          </div>
+          <button>MOCK TEST</button>
+      </nav>
+    </header>
     <div id="main">
-        <div data-scroll data-scroll-speed="-5" id="page1">
+        <div data-scroll data-scroll-speed="-3" id="page1">
             <svg class="c-bttn__morph" fill="none" viewBox="0 0 131 136">
                 <path class="g-path" data-morph="end" fill="#fff"
                     d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z">
@@ -65,12 +68,12 @@
                 <div id="blur-right"></div>
 
             </div>
-
+            <button class="page1_btn">MOCK TEST</button>
 
         </div>
 
 
-        <div id="page2">
+        <div class="container" id="page2">
             <div class="section">
                 <div class="sec-left">
                     <h2>What we do?</h2>
@@ -89,7 +92,7 @@
         <!-- page3 -->
 
 
-        <div data-scroll data-scroll-speed="-1" id="page3">
+        <div class="container" id="page3">
             <h1>Exams available</h1>
             <div class="grid">
                 <div class="card">
@@ -211,101 +214,103 @@
 
         <!-- page4 -->
 
-        <div id="page4">
+        <div class="container" id="page4">
             <video autoplay muted loop src="assets/accern-rhea-cover-big.mp4"></video>
         </div>
 
         <!-- page5 -->
-         <div id="page5">
+         <div class="container" id="page5">
+           <div>
             <div class="outerdiv">
-                <div class="innerdiv">
-                  <!-- div1 -->
-                  <div class="div1 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">Daniel Clifford</p>
-                        <p class="designation">Verified Graduate</p>
-                      </div>
+              <div class="innerdiv">
+                <!-- div1 -->
+                <div class="div1 eachdiv">
+                  <div class="userdetails">
+                    <div class="imgbox">
+                      <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
                     </div>
-                    <div class="review">
-                      <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4>
-                    <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+                    <div class="detbox">
+                      <p class="name">Daniel Clifford</p>
+                      <p class="designation">Verified Graduate</p>
                     </div>
                   </div>
-                  <!-- div2 -->
-                  <div class="div2 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">Jonathan Walters</p>
-                        <p class="designation">Verified Graduate</p>
-                      </div>
+                  <div class="review">
+                    <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4>
+                  <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+                  </div>
+                </div>
+                <!-- div2 -->
+                <div class="div2 eachdiv">
+                  <div class="userdetails">
+                    <div class="imgbox">
+                      <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
                     </div>
-                    <div class="review">
-                      <h4>The team was very supportive and kept me motivated</h4>
-                    <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+                    <div class="detbox">
+                      <p class="name">Jonathan Walters</p>
+                      <p class="designation">Verified Graduate</p>
                     </div>
                   </div>
-                  <!-- div3 -->
-                  <div class="div3 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name dark">Kira Whittle</p>
-                        <p class="designation dark">Verified Graduate</p>
-                      </div>
+                  <div class="review">
+                    <h4>The team was very supportive and kept me motivated</h4>
+                  <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+                  </div>
+                </div>
+                <!-- div3 -->
+                <div class="div3 eachdiv">
+                  <div class="userdetails">
+                    <div class="imgbox">
+                      <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
                     </div>
-                    <div class="review dark">
-                      <h4>Such a life-changing experience. Highly recommended!</h4>
-                      <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of experience. It certainly helped me land a job as a full-stack 100% recommend! ”</p>
+                    <div class="detbox">
+                      <p class="name dark">Kira Whittle</p>
+                      <p class="designation dark">Verified Graduate</p>
                     </div>
                   </div>
-                  <!-- div4 -->
-                  <div class="div4 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name dark">Jeanette Harmon</p>
-                        <p class="designation dark">Verified Graduate</p>
-                      </div>
+                  <div class="review dark">
+                    <h4>Such a life-changing experience. Highly recommended!</h4>
+                    <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of experience. It certainly helped me land a job as a full-stack 100% recommend! ”</p>
+                  </div>
+                </div>
+                <!-- div4 -->
+                <div class="div4 eachdiv">
+                  <div class="userdetails">
+                    <div class="imgbox">
+                      <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
                     </div>
-                    <div class="review dark">
-                      <h4>An overall wonderful and rewarding experience</h4>
-                    <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+                    <div class="detbox">
+                      <p class="name dark">Jeanette Harmon</p>
+                      <p class="designation dark">Verified Graduate</p>
                     </div>
                   </div>
-                  <!-- div5 -->
-                  <div class="div5 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">Patrick Abrams</p>
-                        <p class="designation">Verified Graduate</p>
-                      </div>
+                  <div class="review dark">
+                    <h4>An overall wonderful and rewarding experience</h4>
+                  <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+                  </div>
+                </div>
+                <!-- div5 -->
+                <div class="div5 eachdiv">
+                  <div class="userdetails">
+                    <div class="imgbox">
+                      <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt="">
                     </div>
-                    <div class="review">
-                      <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h4>
-                    <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
+                    <div class="detbox">
+                      <p class="name">Patrick Abrams</p>
+                      <p class="designation">Verified Graduate</p>
                     </div>
+                  </div>
+                  <div class="review">
+                    <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h4>
+                  <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
                   </div>
                 </div>
               </div>
+            </div>
+           </div>
          </div>
 
          <!-- page6 -->
 
-         <div id="page6">
+         <div class="container" id="page6">
             
          </div>
     </div>

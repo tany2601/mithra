@@ -1,0 +1,149 @@
+:root {
+    --container: min(1440px, 100%);
+    font-size: min(3vw, 14px);
+}
+
+button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    background-color: #00004e;
+    z-index: 1;
+    width: 100%;
+}
+
+header nav {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: Center;
+    grid-template-columns: auto 1fr auto;
+    width: var(--container);
+    margin-inline: auto;
+}
+
+nav h1 {
+    color: white;
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 2rem;
+    margin-inline: auto;
+}
+
+.nav-part2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+
+nav button {
+    background-color: white;
+    color: #00004e;
+}
+
+
+/* moving div  */
+
+#moving-div {
+    /* background-color: red; */
+    margin-top: 10rem;
+    position: relative;
+    /* bottom: 3%; */
+    white-space: nowrap;
+    padding: 1rem;
+    overflow: hidden;
+    width: 50%;
+}
+#moving-div .move {
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-div .move img {
+    height: 2rem;
+    margin: 0 1rem;
+}
+
+
+.container>*{
+    width: var(--container) !important;
+    margin-inline: auto;
+}
+
+.page1_btn{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    header nav {
+        grid-template-columns: 1fr;
+    }
+    nav h1{
+        text-align: center;
+    }
+
+    .nav-part2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    #page1{
+        max-height: 550px;
+        margin-top: -4rem;
+    }
+
+    #moving-div{
+        margin-top: 7rem;
+        width: 70%;
+    }
+
+    #moving-div .move img {
+        height: 1rem;
+        margin: 0 1rem;
+    }
+
+    #page2{
+        height: auto !important;
+        padding-bottom: unset;
+    }
+    #page2 .section{
+        flex-wrap: wrap;
+        padding: 2rem;
+        height: auto;
+    }
+    #page2 .section>*{
+        width: 100% ;
+        flex-basis: 100%;
+    }
+
+    #page3 .grid{
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+
+    .page1_btn{
+        display: block;
+        margin-top: 6rem;
+        margin-bottom: -6rem;
+    }
+
+}
