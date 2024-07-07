@@ -100,6 +100,17 @@ nav button {
     display: none;
 }
 
+.form-group{
+    width: 100%;
+}
+.form-group input, .form-group textarea{
+    width: 100%;
+}
+.form-group textarea{
+    resize:none ;
+}
+
+
 @media screen and (max-width:768px) {
     header nav {
         grid-template-columns: 1fr;
@@ -118,7 +129,7 @@ nav button {
     }
 
     #page1{
-        max-height: 550px;
+        max-height: 650px;
         margin-top: -4rem;
     }
 
@@ -157,14 +168,37 @@ nav button {
         margin-top: 6rem;
         margin-bottom: -6rem;
     }
+    #page6{
+        padding: 2rem;
+    }
 
     #page6 img{
         display: none;
     }
 
     #formcard{
-        margin-left: -40%;
+        width: min(100%, 380px) !important;
+        margin: 0 !important;
+        padding: 2rem !important;
 
     }
+    #pagepromocont {
+        flex-direction: column;
+    }
+    #pagepromocont img{
+        width: 90px !important;
+    }
+
+
+    .footcontainer{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .footer-content{
+        width: 100% !important;
+    }
+  
+    
 
 }

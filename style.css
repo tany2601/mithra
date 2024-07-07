@@ -95,7 +95,7 @@ body {
 
 #page1 h1 {
     color: white;
-    font-size: 8vw;
+    font-size: min(6.5rem, 7vw);
     font-weight: 600;
     line-height: 8vw;
 }
@@ -629,7 +629,7 @@ body {
 
 #page3 h1 {
     color: #fff;
-    font-size: 5vw;
+    font-size: min(4rem, 5vw);
     display: flex;
     text-transform: uppercase;
     justify-content: center;
@@ -817,7 +817,7 @@ body {
 		transform: scale(0.6);
 	}
 }
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 768px)
 {
 	.div1 {
 		background-position-x: 10rem;
@@ -839,21 +839,25 @@ body {
 /* #page6 */
 
 #page6{
-    min-height: 100vh;
     width: 100vw;
     background-color: #f0f0f0;
+   
+}
+
+#page6>div{
+    width: var(--container);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-inline: auto;
 }
 
 form {
-	min-width: 25rem;
 	.title {
 		/* font-family: 'Pacifico', cursive; */
 		color: #00004E;
-		font-size: 2.5rem;
+		font-size: min(2.5rem, 3.6vw);
 	}
 	
   .form-control {
@@ -865,7 +869,7 @@ form {
 		
     &.thick {
       height: 3.3rem;
-      padding: .5rem 3.5rem;
+      padding: 0.5rem 2rem !important;
     }
 		
 		&:focus {
@@ -926,19 +930,20 @@ form {
 }
 
 #page6 img{
-    width: 1000px;
+    width: 50%;
     margin-left: -20%;
     margin-right: 10%;
+    flex-grow: 1;
 }
 
 #formcard{
-    width:30vw;
-    height: 65vh;
     background-color: hsla(240, 86%, 49%, 0.212);
     z-index: 0;
     border-radius: 20px;
-    padding-left: 6%;
-    padding-top: 3%;
+    padding: 2rem 3rem;
+    margin-block: 3rem ;
+    margin-right: 3rem;
+    width: min(50%, 380px);
 }
 
 #pagecontext{
@@ -950,6 +955,7 @@ form {
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-inline: 1rem;
 }
 
 #pagecontext h3{
@@ -1013,10 +1019,10 @@ footer{
     padding-top: 50px;
 }
 .footcontainer{
-    width: 1140px;
     margin: auto;
     display: flex;
     justify-content: center;
+    width: var(--container);
 }
 .footer-content{
     width: 33.3%;
